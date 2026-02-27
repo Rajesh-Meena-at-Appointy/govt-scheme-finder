@@ -1,0 +1,86 @@
+[
+  {
+    "id": "pm-kisan",
+    "slug": "pm-kisan",
+    "name": "PM-KISAN (Pradhan Mantri Kisan Samman Nidhi)",
+    "summary": "Income support for eligible farmers in installments (official rules apply).",
+    "category": "farmer",
+    "states": [
+      "all"
+    ],
+    "tags": [
+      "cash-benefit",
+      "farmer"
+    ],
+    "benefits": [
+      "\u20b96,000 per year in installments (as per scheme rules)"
+    ],
+    "documents": [
+      "Aadhaar",
+      "Land records",
+      "Bank account details"
+    ],
+    "applyLink": "https://pmkisan.gov.in/",
+    "rules": {
+      "minAge": 18,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "ayushman-bharat",
+    "slug": "ayushman-bharat",
+    "name": "Ayushman Bharat (PM-JAY)",
+    "summary": "Health coverage for eligible families (criteria varies).",
+    "category": "health",
+    "states": [
+      "all"
+    ],
+    "tags": [
+      "health",
+      "insurance"
+    ],
+    "benefits": [
+      "Health coverage (as per PM-JAY guidelines)"
+    ],
+    "documents": [
+      "Aadhaar",
+      "Ration card / relevant ID"
+    ],
+    "applyLink": "https://pmjay.gov.in/",
+    "rules": {
+      "minAge": 0,
+      "incomeMax": 800000,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "ladli-beti-scholarship",
+    "slug": "ladli-beti-scholarship",
+    "name": "Girl Child Scholarship (State Example)",
+    "summary": "Scholarship for girl students (varies by state).",
+    "category": "student",
+    "states": [
+      "rajasthan",
+      "madhya-pradesh"
+    ],
+    "tags": [
+      "scholarship",
+      "women"
+    ],
+    "benefits": [
+      "Scholarship amount varies by state"
+    ],
+    "documents": [
+      "Aadhaar",
+      "School ID",
+      "Income certificate"
+    ],
+    "applyLink": "https://example.gov.in/",
+    "rules": {
+      "minAge": 6,
+      "incomeMax": 300000,
+      "gender": "female"
+    }
+  }
+]
