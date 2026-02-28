@@ -7,6 +7,7 @@ import { formatSlugLabel } from "@/lib/eligibility";
 import { Shield, Users, FileText, ArrowRight, CheckCircle, Sparkles, Target, Heart, Star } from "lucide-react";
 import Link from "next/link";
 import { useI18n } from "@/lib/i18n";
+import { AdSenseBanner, AdSenseInline, AdSenseFooter } from "@/components/AdSense";
 
 function AnimatedCounter({ end, label, suffix = "" }: { end: number; label: string; suffix?: string }) {
   const countRef = useRef<HTMLSpanElement>(null);
@@ -45,8 +46,7 @@ function AnimatedCounter({ end, label, suffix = "" }: { end: number; label: stri
 
   return (
     <div className="text-center">
-      <span ref={countRef} className="text-4xl font-bold text-blue-600">0</span>
-      <span className="text-4xl font-bold text-blue-600">{suffix}</span>
+      <span ref={countRef} className="text-4xl font-bold text-blue-600">0{suffix}</span>
       <p className="mt-1 text-sm text-slate-600">{label}</p>
     </div>
   );
@@ -116,11 +116,7 @@ export default function Home() {
       </div>
 
       {/* Ad Banner - After Hero */}
-      <div className="my-12 text-center">
-        <div className="inline-block w-full max-w-2xl h-32 bg-slate-50 rounded-xl border-2 border-dashed border-slate-200 flex items-center justify-center">
-          <span className="text-slate-400">Google Ad -2 - Below Hero Section</span>
-        </div>
-      </div>
+      <AdSenseBanner />
 
       {/* Features Grid */}
       <div className="mt-16">
@@ -176,11 +172,7 @@ export default function Home() {
       </div>
 
       {/* Ad Banner - Middle */}
-      <div className="my-12 text-center">
-        <div className="inline-block w-full max-w-2xl h-32 bg-slate-50 rounded-xl border-2 border-dashed border-slate-200 flex items-center justify-center">
-          <span className="text-slate-400">Google Ad - Middle Section</span>
-        </div>
-      </div>
+      <AdSenseInline />
 
       {/* Browse by State */}
       <div className="mt-16">
@@ -230,11 +222,7 @@ export default function Home() {
       </div>
 
       {/* Ad Banner - Before CTA */}
-      <div className="my-12 text-center">
-        <div className="inline-block w-full max-w-2xl h-32 bg-slate-50 rounded-xl border-2 border-dashed border-slate-200 flex items-center justify-center">
-          <span className="text-slate-400">Google Ad - Before CTA</span>
-        </div>
-      </div>
+      <AdSenseInline />
 
       {/* CTA Section */}
       <div className="mt-16 relative overflow-hidden rounded-3xl bg-gradient-to-br from-blue-600 via-blue-700 to-purple-700 px-6 py-12 text-center text-white">
@@ -265,11 +253,7 @@ export default function Home() {
       </div>
 
       {/* Footer Ad */}
-      <div className="my-12 text-center">
-        <div className="inline-block w-full max-w-2xl h-32 bg-slate-50 rounded-xl border-2 border-dashed border-slate-200 flex items-center justify-center">
-          <span className="text-slate-400">Google Ad - Footer</span>
-        </div>
-      </div>
+      <AdSenseFooter />
     </main>
   );
 }

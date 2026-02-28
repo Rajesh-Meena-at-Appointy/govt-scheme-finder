@@ -4,7 +4,9 @@ import { Providers } from "@/components/Providers";
 import { I18nProvider } from "@/lib/i18n";
 import Navbar from "@/components/Navbar";
 import AdSense from "@/components/AdSense";
+import { GTM } from "@/components/GTM";
 import { Shield } from "lucide-react";
+import Script from "next/script";
 
 export const metadata = {
   title: "Govt Scheme Finder - Find Government Schemes You Qualify For",
@@ -26,7 +28,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   return (
     <html lang="en">
+      <head>
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9419529406465609"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body>
+        <GTM />
         <div className="min-h-screen flex flex-col bg-white text-slate-900">
           <Providers>
             <I18nProvider>
@@ -86,13 +96,29 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                         <h4 className="mb-4 text-sm font-semibold text-slate-900">Resources</h4>
                         <ul className="space-y-2 text-sm text-slate-600">
                           <li>
-                            <a href="/admin" className="hover:text-blue-600">Admin Portal</a>
+                            <a href="/about" className="hover:text-blue-600">About Us</a>
                           </li>
                           <li>
-                            <a href="/login" className="hover:text-blue-600">Login</a>
+                            <a href="/contact" className="hover:text-blue-600">Contact</a>
+                          </li>
+                          <li>
+                            <a href="/submit" className="hover:text-blue-600">Submit Scheme</a>
                           </li>
                           <li>
                             <a href="/sitemap.xml" className="hover:text-blue-600">Sitemap</a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      {/* Legal */}
+                      <div>
+                        <h4 className="mb-4 text-sm font-semibold text-slate-900">Legal</h4>
+                        <ul className="space-y-2 text-sm text-slate-600">
+                          <li>
+                            <a href="/privacy-policy" className="hover:text-blue-600">Privacy Policy</a>
+                          </li>
+                          <li>
+                            <a href="/terms" className="hover:text-blue-600">Terms of Service</a>
                           </li>
                         </ul>
                       </div>

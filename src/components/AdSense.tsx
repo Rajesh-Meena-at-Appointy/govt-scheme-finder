@@ -1,74 +1,60 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
-export default function AdSense() {
-  const pubId = process.env.NEXT_PUBLIC_GOOGLE_ADSENSE_PUB_ID;
+const PUB_ID = "ca-pub-9419529406465609";
+
+function AdUnit({ slot, format = "auto", layout }: { slot: string; format?: string; layout?: string }) {
+  const ref = useRef<HTMLModElement>(null);
 
   useEffect(() => {
-    // Load AdSense script
-    if (pubId && pubId !== "ca-pub-xxxxxxxxxxxxxxxx") {
-      const script = document.createElement("script");
-      script.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${pubId}`;
-      script.async = true;
-      script.crossOrigin = "anonymous";
-      document.head.appendChild(script);
+    const timer = setInterval(() => {
+      if (ref.current && (window as any).adsbygoogle) {
+        try {
+          (window as any).adsbygoogle.push(ref.current);
+        } catch (e) {
+          console.error("AdSense error:", e);
+        }
+        clearInterval(timer);
+      }
+    }, 100);
 
-      return () => {
-        // Cleanup script on unmount
-        document.head.removeChild(script);
-      };
-    }
-  }, [pubId]);
+    // Stop trying after 5 seconds
+    setTimeout(() => clearInterval(timer), 5000);
 
-  // Don't render ad slot if no valid pub ID
-  if (!pubId || pubId === "ca-pub-xxxxxxxxxxxxxxxx") {
-    return null;
-  }
+    return () => clearInterval(timer);
+  }, []);
 
   return (
-    <div className="my-8">
-      <ins
-        className="adsbygoogle"
-        style={{ display: "block", textAlign: "center" }}
-        data-ad-client={pubId}
-        data-ad-slot="xxxxxxxxxx"
-        data-ad-format="auto"
-        data-full-width-responsive="true"
-      />
-    </div>
+    <ins
+      ref={ref}
+      className="adsbygoogle"
+      style={{ display: "block", textAlign: "center" }}
+      data-ad-client={PUB_ID}
+      data-ad-slot={slot}
+      data-ad-format={format}
+      data-full-width-responsive="true"
+      {...(layout ? { "data-ad-layout": layout } : {})}
+    />
   );
 }
 
-// Component for inline ads (between results)
+export default function AdSense() {
+  return <AdUnit slot="2927234096" />;
+}
+
+export function AdSenseBanner() {
+  return <AdUnit slot="5384538194" format="horizontal" />;
+}
+
 export function AdSenseInline() {
-  const pubId = process.env.NEXT_PUBLIC_GOOGLE_ADSENSE_PUB_ID;
+  return <AdUnit slot="1431300395" format="rectangle" />;
+}
 
-  useEffect(() => {
-    if (pubId && pubId !== "ca-pub-xxxxxxxxxxxxxxxx") {
-      try {
-        // @ts-ignore
-        (adsbygoogle = window.adsbygoogle || []).push({});
-      } catch (e) {
-        console.error("AdSense error:", e);
-      }
-    }
-  }, [pubId]);
+export function AdSenseFooter() {
+  return <AdUnit slot="2492150593" />;
+}
 
-  if (!pubId || pubId === "ca-pub-xxxxxxxxxxxxxxxx") {
-    return null;
-  }
-
-  return (
-    <div className="my-6">
-      <ins
-        className="adsbygoogle"
-        style={{ display: "block", textAlign: "center" }}
-        data-ad-client={pubId}
-        data-ad-slot="xxxxxxxxxx"
-        data-ad-format="rectangle"
-        data-full-width-responsive="true"
-      />
-    </div>
-  );
+export function AdSenseSkyscraper() {
+  return <AdUnit slot="1234567890" format="vertical" layout="display" />;
 }
