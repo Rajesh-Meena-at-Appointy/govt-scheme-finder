@@ -36,7 +36,7 @@ export const ta = {
       title: 'நீங்கள் தகுதியுடைய அரசுத் திட்டங்களைக் கண்டுபிடியுங்கள்',
       subtitle: 'இந்தியாவில் அரசு நலத் திட்டங்கள், உதவித்தொகைகள் மற்றும் நன்மைகளைக் கண்டுபிடியுங்கள்.',
       statsSchemes: 'செயல்படும் திட்டங்கள்',
-      statesCovered: 'மாநிலங்கள்',
+      statsStates: 'மாநிலங்கள்',
       statsFree: ' இலவசம்',
     },
     features: {
@@ -119,7 +119,7 @@ export const ta = {
       title: 'நன்றி!',
       desc: 'பெறப்பட்டது.',
       backHome: 'முகப்பு',
-      submitDescending: 'மீண்டும்',
+      submitAnother: 'மீண்டும்',
     },
   },
   footer: {

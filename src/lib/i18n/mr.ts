@@ -119,7 +119,7 @@ export const mr = {
       title: 'धन्यवाद!',
       desc: 'प्राप्त झाले.',
       backHome: 'होम',
-      submitDescending: 'पुन्हा',
+      submitAnother: 'पुन्हा',
     },
   },
   footer: {

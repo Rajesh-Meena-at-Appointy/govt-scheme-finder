@@ -119,7 +119,7 @@ export const pa = {
       title: 'ਧੰਨਵਾਦ!',
       desc: 'ਮਿਲ ਗਿਆ.',
       backHome: 'ਹੋਮ',
-      submitDescending: 'ਫੇਰ',
+      submitAnother: 'ਫੇਰ',
     },
   },
   footer: {

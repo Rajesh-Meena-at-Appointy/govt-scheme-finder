@@ -119,7 +119,7 @@ export const as = {
       title: 'ধন্যবাদ!',
       desc: 'পোৱা গল.',
       backHome: 'হোম',
-      submitDescending: 'পুনৰ',
+      submitAnother: 'পুনৰ',
     },
   },
   footer: {

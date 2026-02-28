@@ -119,7 +119,7 @@ export const gu = {
       title: 'આભાર!',
       desc: 'મળી ગયું.',
       backHome: 'હોમ',
-      submitDescending: 'ફરી',
+      submitAnother: 'ફરી',
     },
   },
   footer: {

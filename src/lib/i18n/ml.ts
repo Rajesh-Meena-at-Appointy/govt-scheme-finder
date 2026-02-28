@@ -119,14 +119,14 @@ export const ml = {
       title: 'നന്ദി!',
       desc: 'ലഭിച്ചു.',
       backHome: 'ഹോം',
-      submitDescending: 'വീണ്ടും',
+      submitAnother: 'വീണ്ടും',
     },
   },
   footer: {
     brand: {
       title: 'Govt Scheme Finder',
       tagline: 'ഇന്ത്യ',
-      help: 'സഹായിക്കുക.',
+      desc: 'സഹായിക്കുക.',
     },
     quickLinks: 'ലിങ്കുകള്‍',
     resources: 'വിഭവങ്ങള്‍',

@@ -119,7 +119,7 @@ export const kn = {
       title: 'ಧನ್ಯವಾದ!',
       desc: 'ಸಿಕ್ಕಿತು.',
       backHome: 'ಮುಖ',
-      submitDescending: 'ಮತ್ತೆ',
+      submitAnother: 'ಮತ್ತೆ',
     },
   },
   footer: {

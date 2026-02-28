@@ -119,7 +119,7 @@ export const or = {
       title: 'ଧନ୍ୟବାଦ!',
       desc: 'ମିଳିଗଲା.',
       backHome: 'ହୋମ',
-      submitDescending: 'ପୁଣି',
+      submitAnother: 'ପୁଣି',
     },
   },
   footer: {

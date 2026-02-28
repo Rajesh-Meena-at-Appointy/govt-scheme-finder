@@ -1,6 +1,20 @@
 import type { MetadataRoute } from "next";
 import { getAllSchemes, getCategoriesIndex, getStatesIndex } from "@/lib/schemes";
-import { languages } from "@/lib/i18n";
+
+const languages = [
+  { code: 'en', name: 'English' },
+  { code: 'hi', name: 'Hindi' },
+  { code: 'bn', name: 'Bengali' },
+  { code: 'te', name: 'Telugu' },
+  { code: 'mr', name: 'Marathi' },
+  { code: 'ta', name: 'Tamil' },
+  { code: 'gu', name: 'Gujarati' },
+  { code: 'kn', name: 'Kannada' },
+  { code: 'ml', name: 'Malayalam' },
+  { code: 'pa', name: 'Punjabi' },
+  { code: 'or', name: 'Odia' },
+  { code: 'as', name: 'Assamese' },
+];
 
 /**
  * NOTE:

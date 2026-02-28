@@ -132,7 +132,7 @@ export const bn = {
       title: 'ধন্যবাদ!',
       desc: 'আপনার প্রকল্প সফলভাবে পেয়েছি।',
       backHome: 'হোমে ফিরুন',
-      submitDescending: 'আরেকটি জমা দিন',
+      submitAnother: 'আরেকটি জমা দিন',
     },
   },
 
