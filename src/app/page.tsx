@@ -118,7 +118,7 @@ export default function Home() {
       {/* Ad Banner - After Hero */}
       <div className="my-12 text-center">
         <div className="inline-block w-full max-w-2xl h-32 bg-slate-50 rounded-xl border-2 border-dashed border-slate-200 flex items-center justify-center">
-          <span className="text-slate-400">Google Ad - Below Hero Section</span>
+          <span className="text-slate-400">Google Ad -2 - Below Hero Section</span>
         </div>
       </div>
 
