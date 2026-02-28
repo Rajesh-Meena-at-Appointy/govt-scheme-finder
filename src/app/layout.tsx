@@ -3,7 +3,7 @@ import { AuthProvider } from "@/context/AuthContext";
 import { Providers } from "@/components/Providers";
 import { I18nProvider } from "@/lib/i18n";
 import Navbar from "@/components/Navbar";
-import AdSense from "@/components/AdSense";
+import AdSenseWrapper from "@/components/AdSenseWrapper";
 import { GTM } from "@/components/GTM";
 import { Shield } from "lucide-react";
 import Script from "next/script";
@@ -45,7 +45,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <div className="flex-1">
                   {children}
                 </div>
-                <AdSense />
+                <AdSenseWrapper />
 
                 {/* Footer */}
                 <footer className="border-t border-slate-200 bg-slate-50">
