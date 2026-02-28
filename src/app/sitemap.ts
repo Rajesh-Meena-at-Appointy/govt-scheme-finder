@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getAllSchemes, getCategoriesIndex, getStatesIndex } from "@/lib/schemes";
+import { languages } from "@/lib/i18n";
 
 /**
  * NOTE:
@@ -11,31 +12,47 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const now = new Date();
 
-  const base: MetadataRoute.Sitemap = [
-    { url: siteUrl, lastModified: now, changeFrequency: "daily", priority: 1 },
-    { url: siteUrl + "/admin/rules", lastModified: now, changeFrequency: "monthly", priority: 0.1 },
+  // Base pages with all language alternatives
+  const basePages = [
+    { url: siteUrl, lastModified: now, changeFrequency: "daily" as const, priority: 1 },
+    { url: siteUrl + "/about", lastModified: now, changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: siteUrl + "/contact", lastModified: now, changeFrequency: "monthly" as const, priority: 0.6 },
+    { url: siteUrl + "/privacy-policy", lastModified: now, changeFrequency: "monthly" as const, priority: 0.5 },
+    { url: siteUrl + "/terms", lastModified: now, changeFrequency: "monthly" as const, priority: 0.5 },
+    { url: siteUrl + "/submit", lastModified: now, changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: siteUrl + "/categories", lastModified: now, changeFrequency: "weekly" as const, priority: 0.8 },
+    { url: siteUrl + "/states", lastModified: now, changeFrequency: "weekly" as const, priority: 0.8 },
   ];
 
-  const schemeUrls = getAllSchemes().map((s) => ({
-    url: `${siteUrl}/scheme/${s.slug}`,
-    lastModified: now,
-    changeFrequency: "weekly" as const,
-    priority: 0.8,
-  }));
+  // Generate scheme URLs for all languages
+  const schemeUrls = getAllSchemes().flatMap((s) => {
+    return languages.map((lang) => ({
+      url: `${siteUrl}/scheme/${s.slug}?lang=${lang.code}`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    }));
+  });
 
-  const stateUrls = getStatesIndex().map((st) => ({
-    url: `${siteUrl}/state/${st}`,
-    lastModified: now,
-    changeFrequency: "weekly" as const,
-    priority: 0.6,
-  }));
+  // Generate state URLs for all languages
+  const stateUrls = getStatesIndex().flatMap((st) => {
+    return languages.map((lang) => ({
+      url: `${siteUrl}/state/${st}?lang=${lang.code}`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.6,
+    }));
+  });
 
-  const categoryUrls = getCategoriesIndex().map((c) => ({
-    url: `${siteUrl}/category/${c}`,
-    lastModified: now,
-    changeFrequency: "weekly" as const,
-    priority: 0.6,
-  }));
+  // Generate category URLs for all languages
+  const categoryUrls = getCategoriesIndex().flatMap((c) => {
+    return languages.map((lang) => ({
+      url: `${siteUrl}/category/${c}?lang=${lang.code}`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.6,
+    }));
+  });
 
-  return [...base, ...schemeUrls, ...stateUrls, ...categoryUrls];
+  return [...basePages, ...schemeUrls, ...stateUrls, ...categoryUrls];
 }

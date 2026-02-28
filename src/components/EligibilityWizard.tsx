@@ -61,23 +61,23 @@ export default function EligibilityWizard() {
       {/* Gradient top border */}
       <div className="h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-blue-500"></div>
 
-      <CardHeader className="bg-gradient-to-br from-slate-50 to-white pb-6">
-        <CardTitle className="text-2xl font-bold text-slate-900 flex items-center gap-3">
-          <div className="p-2 bg-blue-100 rounded-xl">
-            <Search className="h-6 w-6 text-blue-600" />
+      <CardHeader className="bg-gradient-to-br from-slate-50 to-white pb-4 md:pb-6">
+        <CardTitle className="text-xl md:text-2xl font-bold text-slate-900 flex items-center gap-2 md:gap-3">
+          <div className="p-1.5 md:p-2 bg-blue-100 rounded-lg md:rounded-xl">
+            <Search className="h-5 w-5 md:h-6 md:w-6 text-blue-600" />
           </div>
           <span>{t.wizard.title}</span>
         </CardTitle>
-        <p className="text-slate-600 mt-2">
+        <p className="text-sm md:text-base text-slate-600 mt-1 md:mt-2">
           {t.wizard.subtitle}
         </p>
       </CardHeader>
 
-      <CardContent className="pt-6 bg-white">
-        <div className="grid gap-6">
-          {/* State & Category Row */}
-          <div className="grid gap-4 md:grid-cols-2">
-            <div className="space-y-2">
+      <CardContent className="pt-4 md:pt-6 bg-white">
+        <div className="space-y-4 md:space-y-6">
+          {/* State & Category Row - Stack on mobile */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
+            <div className="space-y-1.5 md:space-y-2">
               <Label className="text-sm font-semibold text-slate-700 flex items-center gap-2">
                 <MapPin className="h-4 w-4 text-blue-500" />
                 {t.wizard.state}
@@ -85,7 +85,7 @@ export default function EligibilityWizard() {
               <Select
                 value={state}
                 onChange={(e) => setState(e.target.value)}
-                className="w-full h-12 border-2 border-slate-200 focus:border-blue-500 rounded-xl"
+                className="w-full h-12 md:h-12 border-2 border-slate-200 focus:border-blue-500 rounded-xl text-base"
               >
                 {STATES.map((s) => (
                   <option key={s.value} value={s.value}>
@@ -95,7 +95,7 @@ export default function EligibilityWizard() {
               </Select>
             </div>
 
-            <div className="space-y-2">
+            <div className="space-y-1.5 md:space-y-2">
               <Label className="text-sm font-semibold text-slate-700 flex items-center gap-2">
                 <Briefcase className="h-4 w-4 text-blue-500" />
                 {t.wizard.category}
@@ -103,7 +103,7 @@ export default function EligibilityWizard() {
               <Select
                 value={category}
                 onChange={(e) => setCategory(e.target.value)}
-                className="w-full h-12 border-2 border-slate-200 focus:border-blue-500 rounded-xl"
+                className="w-full h-12 md:h-12 border-2 border-slate-200 focus:border-blue-500 rounded-xl text-base"
               >
                 {CATEGORIES.map((c) => (
                   <option key={c.value} value={c.value}>
@@ -114,9 +114,9 @@ export default function EligibilityWizard() {
             </div>
           </div>
 
-          {/* Personal Details Row */}
-          <div className="grid gap-4 md:grid-cols-3">
-            <div className="space-y-2">
+          {/* Personal Details Row - Stack on mobile */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4">
+            <div className="space-y-1.5 md:space-y-2">
               <Label className="text-sm font-semibold text-slate-700 flex items-center gap-2">
                 <User className="h-4 w-4 text-blue-500" />
                 {t.wizard.gender}
@@ -124,7 +124,7 @@ export default function EligibilityWizard() {
               <Select
                 value={gender}
                 onChange={(e) => setGender(e.target.value as any)}
-                className="w-full h-12 border-2 border-slate-200 focus:border-blue-500 rounded-xl"
+                className="w-full h-12 md:h-12 border-2 border-slate-200 focus:border-blue-500 rounded-xl text-base"
               >
                 <option value="male">{t.wizard.genders.male}</option>
                 <option value="female">{t.wizard.genders.female}</option>
@@ -132,7 +132,7 @@ export default function EligibilityWizard() {
               </Select>
             </div>
 
-            <div className="space-y-2">
+            <div className="space-y-1.5 md:space-y-2">
               <Label className="text-sm font-semibold text-slate-700 flex items-center gap-2">
                 <Calendar className="h-4 w-4 text-blue-500" />
                 {t.wizard.age}
@@ -143,12 +143,12 @@ export default function EligibilityWizard() {
                 onChange={(e) => setAge(Number(e.target.value))}
                 min="0"
                 max="120"
-                className="w-full h-12 border-2 border-slate-200 focus:border-blue-500 rounded-xl"
-                placeholder="Enter your age"
+                className="w-full h-12 md:h-12 border-2 border-slate-200 focus:border-blue-500 rounded-xl text-base"
+                placeholder="Age"
               />
             </div>
 
-            <div className="space-y-2">
+            <div className="space-y-1.5 md:space-y-2">
               <Label className="text-sm font-semibold text-slate-700 flex items-center gap-2">
                 <DollarSign className="h-4 w-4 text-blue-500" />
                 {t.wizard.income}
@@ -158,8 +158,8 @@ export default function EligibilityWizard() {
                 value={income}
                 onChange={(e) => setIncome(Number(e.target.value))}
                 min="0"
-                className="w-full h-12 border-2 border-slate-200 focus:border-blue-500 rounded-xl"
-                placeholder="Enter annual income"
+                className="w-full h-12 md:h-12 border-2 border-slate-200 focus:border-blue-500 rounded-xl text-base"
+                placeholder="₹ Income"
               />
             </div>
           </div>
@@ -169,15 +169,16 @@ export default function EligibilityWizard() {
             size="lg"
             disabled={!canSearch}
             onClick={handleSearch}
-            className="w-full h-14 text-lg font-bold bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 rounded-xl shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]"
+            className="w-full h-12 md:h-14 text-base md:text-lg font-bold bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 rounded-xl shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]"
           >
-            <Search className="h-5 w-5 mr-2" />
-            {t.wizard.findSchemes}
-            <ArrowRight className="h-5 w-5 ml-2" />
+            <Search className="h-5 w-5 md:h-5 md:w-5 mr-2" />
+            <span className="hidden sm:inline">{t.wizard.findSchemes}</span>
+            <span className="sm:hidden">{t.wizard.findSchemes}</span>
+            <ArrowRight className="h-5 w-5 md:h-5 md:w-5 ml-2" />
           </Button>
 
           {/* Disclaimer */}
-          <p className="text-xs text-slate-500 text-center bg-slate-50 p-3 rounded-lg">
+          <p className="text-xs text-slate-500 text-center bg-slate-50 p-2 md:p-3 rounded-lg leading-relaxed">
             <strong>Disclaimer:</strong> {t.wizard.disclaimer}
           </p>
         </div>
