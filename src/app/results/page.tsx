@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { Suspense, useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { getAllSchemes } from "@/lib/schemes";
 import { isEligible, scoreScheme, type Profile } from "@/lib/eligibility";
@@ -9,7 +9,7 @@ import FiltersBar from "@/components/FiltersBar";
 import { AdSenseInline } from "@/components/AdSense";
 import { safeLower } from "@/lib/utils";
 
-export default function ResultsPage() {
+function ResultsContent() {
   const sp = useSearchParams();
 
   const state = String(sp.get("state") ?? "rajasthan");
@@ -77,5 +77,28 @@ export default function ResultsPage() {
         )}
       </div>
     </main>
+  );
+}
+
+function LoadingState() {
+  return (
+    <main className="mx-auto max-w-6xl px-4 py-10">
+      <div className="animate-pulse">
+        <div className="h-8 bg-slate-200 rounded w-48 mb-6"></div>
+        <div className="space-y-4">
+          {[1, 2, 3].map((i) => (
+            <div key={i} className="h-32 bg-slate-200 rounded"></div>
+          ))}
+        </div>
+      </div>
+    </main>
+  );
+}
+
+export default function ResultsPage() {
+  return (
+    <Suspense fallback={<LoadingState />}>
+      <ResultsContent />
+    </Suspense>
   );
 }

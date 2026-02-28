@@ -3,7 +3,7 @@
     "id": "pm-kisan",
     "slug": "pm-kisan",
     "name": "PM-KISAN (Pradhan Mantri Kisan Samman Nidhi)",
-    "summary": "Income support for eligible farmers in installments (official rules apply).",
+    "summary": "Income support for eligible farmer families as per official guidelines.",
     "category": "farmer",
     "states": [
       "all"
@@ -13,7 +13,7 @@
       "farmer"
     ],
     "benefits": [
-      "\u20b96,000 per year in installments (as per scheme rules)"
+      "₹6,000 per year in installments (as per scheme rules)"
     ],
     "documents": [
       "Aadhaar",
@@ -28,10 +28,10 @@
     }
   },
   {
-    "id": "ayushman-bharat",
-    "slug": "ayushman-bharat",
+    "id": "pmjay",
+    "slug": "ayushman-bharat-pmjay",
     "name": "Ayushman Bharat (PM-JAY)",
-    "summary": "Health coverage for eligible families (criteria varies).",
+    "summary": "Health cover for eligible beneficiaries as per PM-JAY rules.",
     "category": "health",
     "states": [
       "all"
@@ -41,46 +41,340 @@
       "insurance"
     ],
     "benefits": [
-      "Health coverage (as per PM-JAY guidelines)"
+      "Health coverage up to the scheme limit (as per guidelines)"
     ],
     "documents": [
-      "Aadhaar",
-      "Ration card / relevant ID"
+      "Aadhaar / ID",
+      "Eligibility proof as per portal"
     ],
-    "applyLink": "https://pmjay.gov.in/",
+    "applyLink": "https://beneficiary.nha.gov.in/",
     "rules": {
       "minAge": 0,
-      "incomeMax": 800000,
+      "incomeMax": null,
       "gender": "any"
     }
   },
   {
-    "id": "ladli-beti-scholarship",
-    "slug": "ladli-beti-scholarship",
-    "name": "Girl Child Scholarship (State Example)",
-    "summary": "Scholarship for girl students (varies by state).",
-    "category": "student",
+    "id": "pmay-urban",
+    "slug": "pmay-urban",
+    "name": "Pradhan Mantri Awas Yojana - Urban (PMAY-U)",
+    "summary": "Housing support for eligible urban beneficiaries (as per PMAY-U).",
+    "category": "other",
     "states": [
-      "rajasthan",
-      "madhya-pradesh"
+      "all"
     ],
     "tags": [
-      "scholarship",
-      "women"
+      "housing",
+      "subsidy"
     ],
     "benefits": [
-      "Scholarship amount varies by state"
+      "Housing assistance/subsidy (as per scheme component)"
     ],
     "documents": [
       "Aadhaar",
-      "School ID",
-      "Income certificate"
+      "Income proof",
+      "Bank details"
     ],
-    "applyLink": "https://example.gov.in/",
+    "applyLink": "https://pmay-urban.gov.in/",
     "rules": {
-      "minAge": 6,
-      "incomeMax": 300000,
-      "gender": "female"
+      "minAge": 18,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "pmay-gramin",
+    "slug": "pmay-gramin",
+    "name": "Pradhan Mantri Awas Yojana - Gramin (PMAY-G)",
+    "summary": "Rural housing assistance for eligible households.",
+    "category": "other",
+    "states": [
+      "all"
+    ],
+    "tags": [
+      "housing",
+      "rural"
+    ],
+    "benefits": [
+      "Rural housing assistance (as per guidelines)"
+    ],
+    "documents": [
+      "Aadhaar",
+      "Job card/ID (as applicable)"
+    ],
+    "applyLink": "https://pmayg.nic.in/",
+    "rules": {
+      "minAge": 18,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "ujjwala",
+    "slug": "pm-ujjwala-yojana",
+    "name": "Pradhan Mantri Ujjwala Yojana (PMUY)",
+    "summary": "LPG connection support for eligible women/households.",
+    "category": "women",
+    "states": [
+      "all"
+    ],
+    "tags": [
+      "lpg",
+      "subsidy"
+    ],
+    "benefits": [
+      "New LPG connection support (as per PMUY)"
+    ],
+    "documents": [
+      "Aadhaar",
+      "Ration card/ID"
+    ],
+    "applyLink": "https://www.pmuy.gov.in/",
+    "rules": {
+      "minAge": 18,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "jjm",
+    "slug": "jal-jeevan-mission",
+    "name": "Jal Jeevan Mission (JJM)",
+    "summary": "Tap water supply mission for rural households (implementation varies).",
+    "category": "other",
+    "states": [
+      "all"
+    ],
+    "tags": [
+      "water",
+      "rural"
+    ],
+    "benefits": [
+      "Functional household tap connections (as per mission)"
+    ],
+    "documents": [
+      "Local body requirements (varies)"
+    ],
+    "applyLink": "https://jaljeevanmission.gov.in/",
+    "rules": {
+      "minAge": 0,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "nps",
+    "slug": "national-pension-system",
+    "name": "National Pension System (NPS)",
+    "summary": "Voluntary pension/retirement savings scheme for eligible citizens.",
+    "category": "senior",
+    "states": [
+      "all"
+    ],
+    "tags": [
+      "pension",
+      "retirement"
+    ],
+    "benefits": [
+      "Pension/retirement corpus via contributions"
+    ],
+    "documents": [
+      "PAN/Aadhaar",
+      "KYC documents"
+    ],
+    "applyLink": "https://enps.nsdl.com/",
+    "rules": {
+      "minAge": 18,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "atal-pension",
+    "slug": "atal-pension-yojana",
+    "name": "Atal Pension Yojana (APY)",
+    "summary": "Pension scheme for eligible subscribers (as per APY rules).",
+    "category": "senior",
+    "states": [
+      "all"
+    ],
+    "tags": [
+      "pension"
+    ],
+    "benefits": [
+      "Monthly pension (as per chosen slab and rules)"
+    ],
+    "documents": [
+      "Aadhaar",
+      "Bank account"
+    ],
+    "applyLink": "https://www.npscra.nsdl.co.in/scheme-details.php",
+    "rules": {
+      "minAge": 18,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "mudra",
+    "slug": "pm-mudra-yojana",
+    "name": "Pradhan Mantri MUDRA Yojana (PMMY)",
+    "summary": "Loans for micro/small enterprises (as per lender terms).",
+    "category": "jobs",
+    "states": [
+      "all"
+    ],
+    "tags": [
+      "loan",
+      "msme"
+    ],
+    "benefits": [
+      "Business loans under Shishu/Kishore/Tarun categories"
+    ],
+    "documents": [
+      "KYC",
+      "Business details"
+    ],
+    "applyLink": "https://www.mudra.org.in/",
+    "rules": {
+      "minAge": 18,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "jan-dhan",
+    "slug": "pm-jan-dhan-yojana",
+    "name": "Pradhan Mantri Jan Dhan Yojana (PMJDY)",
+    "summary": "Financial inclusion: basic bank accounts and related benefits.",
+    "category": "other",
+    "states": [
+      "all"
+    ],
+    "tags": [
+      "banking",
+      "financial-inclusion"
+    ],
+    "benefits": [
+      "Basic savings account (as per bank/PMJDY)"
+    ],
+    "documents": [
+      "KYC (Aadhaar/PAN/ID)"
+    ],
+    "applyLink": "https://pmjdy.gov.in/",
+    "rules": {
+      "minAge": 10,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "pmsby",
+    "slug": "pradhan-mantri-suraksha-bima-yojana",
+    "name": "Pradhan Mantri Suraksha Bima Yojana (PMSBY)",
+    "summary": "Accident insurance cover for eligible subscribers.",
+    "category": "health",
+    "states": [
+      "all"
+    ],
+    "tags": [
+      "insurance",
+      "accident"
+    ],
+    "benefits": [
+      "Accident insurance cover (as per scheme)"
+    ],
+    "documents": [
+      "Bank account",
+      "Aadhaar (as applicable)"
+    ],
+    "applyLink": "https://www.jansuraksha.gov.in/",
+    "rules": {
+      "minAge": 18,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "pmjjby",
+    "slug": "pradhan-mantri-jeevan-jyoti-bima-yojana",
+    "name": "Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)",
+    "summary": "Life insurance cover for eligible subscribers.",
+    "category": "health",
+    "states": [
+      "all"
+    ],
+    "tags": [
+      "insurance",
+      "life"
+    ],
+    "benefits": [
+      "Life insurance cover (as per scheme)"
+    ],
+    "documents": [
+      "Bank account",
+      "Aadhaar (as applicable)"
+    ],
+    "applyLink": "https://www.jansuraksha.gov.in/",
+    "rules": {
+      "minAge": 18,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "e-shram",
+    "slug": "e-shram",
+    "name": "e-SHRAM (National Database of Unorganised Workers)",
+    "summary": "Registration for unorganised workers; linked benefits vary.",
+    "category": "jobs",
+    "states": [
+      "all"
+    ],
+    "tags": [
+      "labour",
+      "registration"
+    ],
+    "benefits": [
+      "Worker registration; access to applicable welfare benefits"
+    ],
+    "documents": [
+      "Aadhaar",
+      "Mobile number",
+      "Bank details (as applicable)"
+    ],
+    "applyLink": "https://eshram.gov.in/",
+    "rules": {
+      "minAge": 16,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "mgnrega",
+    "slug": "mgnrega",
+    "name": "MGNREGA (Rural Employment Guarantee)",
+    "summary": "Wage employment guarantee in rural areas (as per Act).",
+    "category": "jobs",
+    "states": [
+      "all"
+    ],
+    "tags": [
+      "employment",
+      "rural"
+    ],
+    "benefits": [
+      "Up to 100 days wage employment (as per rules)"
+    ],
+    "documents": [
+      "Job card",
+      "Aadhaar/ID"
+    ],
+    "applyLink": "https://nrega.nic.in/",
+    "rules": {
+      "minAge": 18,
+      "incomeMax": null,
+      "gender": "any"
     }
   }
 ]

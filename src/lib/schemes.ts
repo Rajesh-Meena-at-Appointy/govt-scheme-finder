@@ -29,6 +29,10 @@ export function getSchemeBySlug(slug: string): Scheme | undefined {
   return getAllSchemes().find((s) => s.slug === slug);
 }
 
+export function getSchemeById(id: string): Scheme | undefined {
+  return getAllSchemes().find((s) => s.id === id);
+}
+
 export function getStatesIndex(): string[] {
   const set = new Set<string>();
   for (const s of getAllSchemes()) {

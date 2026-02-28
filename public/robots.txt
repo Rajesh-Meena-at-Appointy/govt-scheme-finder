@@ -1,0 +1,11 @@
+# Robots.txt for Govt Scheme Finder
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://govtschemefinder.com/sitemap.xml
+
+# Disallow admin areas
+Disallow: /admin/
+Disallow: /login/
+Disallow: /api/

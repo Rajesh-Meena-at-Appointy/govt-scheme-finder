@@ -6,8 +6,9 @@ import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-export default function SchemePage({ params }: { params: { slug: string } }) {
-  const scheme = getSchemeBySlug(params.slug);
+export default async function SchemePage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const scheme = getSchemeBySlug(slug);
   if (!scheme) return notFound();
 
   return (

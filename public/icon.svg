@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d47a1"/>
+      <stop offset="50%" style="stop-color:#1565c0"/>
+      <stop offset="100%" style="stop-color:#00897b"/>
+    </linearGradient>
+  </defs>
+  <!-- Shield background -->
+  <path d="M32 4L8 14v16c0 14.36 10.24 27.8 24 32 13.76-4.2 24-17.64 24-32V14L32 4z" fill="url(#grad)"/>
+  <!-- Shield inner border -->
+  <path d="M32 8L12 16.5v12.5c0 11 8 21.4 20 25 12-3.6 20-14 20-25V16.5L32 8z" fill="none" stroke="white" stroke-width="2" opacity="0.3"/>
+  <!-- Rupee symbol -->
+  <text x="32" y="42" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="white" text-anchor="middle">₹</text>
+</svg>

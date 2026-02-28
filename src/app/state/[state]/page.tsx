@@ -2,8 +2,8 @@ import { getAllSchemes } from "@/lib/schemes";
 import SchemeCard from "@/components/SchemeCard";
 import { formatSlugLabel } from "@/lib/eligibility";
 
-export default function StatePage({ params }: { params: { state: string } }) {
-  const state = params.state;
+export default async function StatePage({ params }: { params: Promise<{ state: string }> }) {
+  const { state } = await params;
   const label = formatSlugLabel(state);
 
   const schemes = getAllSchemes().filter((s) => s.states.includes("all") || s.states.includes(state));

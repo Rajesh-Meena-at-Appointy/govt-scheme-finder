@@ -2,8 +2,8 @@ import { getAllSchemes } from "@/lib/schemes";
 import SchemeCard from "@/components/SchemeCard";
 import { formatSlugLabel } from "@/lib/eligibility";
 
-export default function CategoryPage({ params }: { params: { category: string } }) {
-  const category = params.category;
+export default async function CategoryPage({ params }: { params: Promise<{ category: string }> }) {
+  const { category } = await params;
   const label = formatSlugLabel(category);
 
   const schemes = getAllSchemes().filter((s) => s.category === category);
