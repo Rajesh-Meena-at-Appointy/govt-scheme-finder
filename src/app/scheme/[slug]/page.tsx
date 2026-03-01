@@ -5,7 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import Link from "next/link";
-import { notFound, Metadata } from "next/navigation";
+import { notFound } from "next/navigation";
+import { Metadata } from "next";
 import { CheckCircle, FileText, Users, Clock, ArrowRight, ExternalLink } from "lucide-react";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
