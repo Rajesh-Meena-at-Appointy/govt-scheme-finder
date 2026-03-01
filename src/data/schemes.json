@@ -3,7 +3,7 @@
     "id": "pm-kisan",
     "slug": "pm-kisan",
     "name": "PM-KISAN (Pradhan Mantri Kisan Samman Nidhi)",
-    "summary": "Income support for eligible farmer families as per official guidelines.",
+    "summary": "Income support for eligible farmer families.",
     "category": "farmer",
     "states": [
       "all"
@@ -13,12 +13,12 @@
       "farmer"
     ],
     "benefits": [
-      "₹6,000 per year in installments (as per scheme rules)"
+      "₹6,000 per year (as per scheme rules)"
     ],
     "documents": [
       "Aadhaar",
       "Land records",
-      "Bank account details"
+      "Bank details"
     ],
     "applyLink": "https://pmkisan.gov.in/",
     "rules": {
@@ -31,7 +31,7 @@
     "id": "pmjay",
     "slug": "ayushman-bharat-pmjay",
     "name": "Ayushman Bharat (PM-JAY)",
-    "summary": "Health cover for eligible beneficiaries as per PM-JAY rules.",
+    "summary": "Health insurance coverage for eligible families.",
     "category": "health",
     "states": [
       "all"
@@ -41,11 +41,11 @@
       "insurance"
     ],
     "benefits": [
-      "Health coverage up to the scheme limit (as per guidelines)"
+      "Health cover up to scheme limit"
     ],
     "documents": [
-      "Aadhaar / ID",
-      "Eligibility proof as per portal"
+      "Aadhaar",
+      "Eligibility proof"
     ],
     "applyLink": "https://beneficiary.nha.gov.in/",
     "rules": {
@@ -57,8 +57,8 @@
   {
     "id": "pmay-urban",
     "slug": "pmay-urban",
-    "name": "Pradhan Mantri Awas Yojana - Urban (PMAY-U)",
-    "summary": "Housing support for eligible urban beneficiaries (as per PMAY-U).",
+    "name": "PM Awas Yojana Urban",
+    "summary": "Housing subsidy for urban beneficiaries.",
     "category": "other",
     "states": [
       "all"
@@ -68,12 +68,11 @@
       "subsidy"
     ],
     "benefits": [
-      "Housing assistance/subsidy (as per scheme component)"
+      "Interest subsidy on housing loans"
     ],
     "documents": [
       "Aadhaar",
-      "Income proof",
-      "Bank details"
+      "Income proof"
     ],
     "applyLink": "https://pmay-urban.gov.in/",
     "rules": {
@@ -85,8 +84,8 @@
   {
     "id": "pmay-gramin",
     "slug": "pmay-gramin",
-    "name": "Pradhan Mantri Awas Yojana - Gramin (PMAY-G)",
-    "summary": "Rural housing assistance for eligible households.",
+    "name": "PM Awas Yojana Gramin",
+    "summary": "Rural housing assistance.",
     "category": "other",
     "states": [
       "all"
@@ -96,11 +95,11 @@
       "rural"
     ],
     "benefits": [
-      "Rural housing assistance (as per guidelines)"
+      "Financial assistance for rural housing"
     ],
     "documents": [
       "Aadhaar",
-      "Job card/ID (as applicable)"
+      "Rural eligibility proof"
     ],
     "applyLink": "https://pmayg.nic.in/",
     "rules": {
@@ -110,10 +109,10 @@
     }
   },
   {
-    "id": "ujjwala",
+    "id": "pmuy",
     "slug": "pm-ujjwala-yojana",
-    "name": "Pradhan Mantri Ujjwala Yojana (PMUY)",
-    "summary": "LPG connection support for eligible women/households.",
+    "name": "PM Ujjwala Yojana",
+    "summary": "LPG connection support for eligible households.",
     "category": "women",
     "states": [
       "all"
@@ -123,11 +122,11 @@
       "subsidy"
     ],
     "benefits": [
-      "New LPG connection support (as per PMUY)"
+      "Free LPG connection (as per rules)"
     ],
     "documents": [
       "Aadhaar",
-      "Ration card/ID"
+      "Ration card"
     ],
     "applyLink": "https://www.pmuy.gov.in/",
     "rules": {
@@ -137,89 +136,10 @@
     }
   },
   {
-    "id": "jjm",
-    "slug": "jal-jeevan-mission",
-    "name": "Jal Jeevan Mission (JJM)",
-    "summary": "Tap water supply mission for rural households (implementation varies).",
-    "category": "other",
-    "states": [
-      "all"
-    ],
-    "tags": [
-      "water",
-      "rural"
-    ],
-    "benefits": [
-      "Functional household tap connections (as per mission)"
-    ],
-    "documents": [
-      "Local body requirements (varies)"
-    ],
-    "applyLink": "https://jaljeevanmission.gov.in/",
-    "rules": {
-      "minAge": 0,
-      "incomeMax": null,
-      "gender": "any"
-    }
-  },
-  {
-    "id": "nps",
-    "slug": "national-pension-system",
-    "name": "National Pension System (NPS)",
-    "summary": "Voluntary pension/retirement savings scheme for eligible citizens.",
-    "category": "senior",
-    "states": [
-      "all"
-    ],
-    "tags": [
-      "pension",
-      "retirement"
-    ],
-    "benefits": [
-      "Pension/retirement corpus via contributions"
-    ],
-    "documents": [
-      "PAN/Aadhaar",
-      "KYC documents"
-    ],
-    "applyLink": "https://enps.nsdl.com/",
-    "rules": {
-      "minAge": 18,
-      "incomeMax": null,
-      "gender": "any"
-    }
-  },
-  {
-    "id": "atal-pension",
-    "slug": "atal-pension-yojana",
-    "name": "Atal Pension Yojana (APY)",
-    "summary": "Pension scheme for eligible subscribers (as per APY rules).",
-    "category": "senior",
-    "states": [
-      "all"
-    ],
-    "tags": [
-      "pension"
-    ],
-    "benefits": [
-      "Monthly pension (as per chosen slab and rules)"
-    ],
-    "documents": [
-      "Aadhaar",
-      "Bank account"
-    ],
-    "applyLink": "https://www.npscra.nsdl.co.in/scheme-details.php",
-    "rules": {
-      "minAge": 18,
-      "incomeMax": null,
-      "gender": "any"
-    }
-  },
-  {
     "id": "mudra",
     "slug": "pm-mudra-yojana",
-    "name": "Pradhan Mantri MUDRA Yojana (PMMY)",
-    "summary": "Loans for micro/small enterprises (as per lender terms).",
+    "name": "PM Mudra Yojana",
+    "summary": "Loans for micro enterprises.",
     "category": "jobs",
     "states": [
       "all"
@@ -229,11 +149,11 @@
       "msme"
     ],
     "benefits": [
-      "Business loans under Shishu/Kishore/Tarun categories"
+      "Business loans up to limits defined by scheme"
     ],
     "documents": [
       "KYC",
-      "Business details"
+      "Business proof"
     ],
     "applyLink": "https://www.mudra.org.in/",
     "rules": {
@@ -243,52 +163,26 @@
     }
   },
   {
-    "id": "jan-dhan",
-    "slug": "pm-jan-dhan-yojana",
-    "name": "Pradhan Mantri Jan Dhan Yojana (PMJDY)",
-    "summary": "Financial inclusion: basic bank accounts and related benefits.",
-    "category": "other",
-    "states": [
-      "all"
-    ],
-    "tags": [
-      "banking",
-      "financial-inclusion"
-    ],
-    "benefits": [
-      "Basic savings account (as per bank/PMJDY)"
-    ],
-    "documents": [
-      "KYC (Aadhaar/PAN/ID)"
-    ],
-    "applyLink": "https://pmjdy.gov.in/",
-    "rules": {
-      "minAge": 10,
-      "incomeMax": null,
-      "gender": "any"
-    }
-  },
-  {
-    "id": "pmsby",
-    "slug": "pradhan-mantri-suraksha-bima-yojana",
-    "name": "Pradhan Mantri Suraksha Bima Yojana (PMSBY)",
-    "summary": "Accident insurance cover for eligible subscribers.",
-    "category": "health",
+    "id": "pmfby",
+    "slug": "pm-fasal-bima-yojana",
+    "name": "PM Fasal Bima Yojana",
+    "summary": "Crop insurance for farmers.",
+    "category": "farmer",
     "states": [
       "all"
     ],
     "tags": [
       "insurance",
-      "accident"
+      "agriculture"
     ],
     "benefits": [
-      "Accident insurance cover (as per scheme)"
+      "Crop loss insurance coverage"
     ],
     "documents": [
-      "Bank account",
-      "Aadhaar (as applicable)"
+      "Aadhaar",
+      "Land records"
     ],
-    "applyLink": "https://www.jansuraksha.gov.in/",
+    "applyLink": "https://pmfby.gov.in/",
     "rules": {
       "minAge": 18,
       "incomeMax": null,
@@ -297,9 +191,9 @@
   },
   {
     "id": "pmjjby",
-    "slug": "pradhan-mantri-jeevan-jyoti-bima-yojana",
-    "name": "Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)",
-    "summary": "Life insurance cover for eligible subscribers.",
+    "slug": "pm-jeevan-jyoti-bima",
+    "name": "PM Jeevan Jyoti Bima Yojana",
+    "summary": "Life insurance coverage.",
     "category": "health",
     "states": [
       "all"
@@ -309,11 +203,11 @@
       "life"
     ],
     "benefits": [
-      "Life insurance cover (as per scheme)"
+      "Life insurance cover"
     ],
     "documents": [
       "Bank account",
-      "Aadhaar (as applicable)"
+      "Aadhaar"
     ],
     "applyLink": "https://www.jansuraksha.gov.in/",
     "rules": {
@@ -323,10 +217,194 @@
     }
   },
   {
+    "id": "pmsby",
+    "slug": "pm-suraksha-bima",
+    "name": "PM Suraksha Bima Yojana",
+    "summary": "Accident insurance scheme.",
+    "category": "health",
+    "states": [
+      "all"
+    ],
+    "tags": [
+      "insurance",
+      "accident"
+    ],
+    "benefits": [
+      "Accident insurance coverage"
+    ],
+    "documents": [
+      "Bank account",
+      "Aadhaar"
+    ],
+    "applyLink": "https://www.jansuraksha.gov.in/",
+    "rules": {
+      "minAge": 18,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "atal-pension",
+    "slug": "atal-pension-yojana",
+    "name": "Atal Pension Yojana",
+    "summary": "Pension scheme for unorganized sector.",
+    "category": "senior",
+    "states": [
+      "all"
+    ],
+    "tags": [
+      "pension"
+    ],
+    "benefits": [
+      "Guaranteed monthly pension"
+    ],
+    "documents": [
+      "Aadhaar",
+      "Bank account"
+    ],
+    "applyLink": "https://www.npscra.nsdl.co.in/",
+    "rules": {
+      "minAge": 18,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "nps",
+    "slug": "national-pension-system",
+    "name": "National Pension System",
+    "summary": "Retirement savings scheme.",
+    "category": "senior",
+    "states": [
+      "all"
+    ],
+    "tags": [
+      "pension",
+      "retirement"
+    ],
+    "benefits": [
+      "Pension corpus on retirement"
+    ],
+    "documents": [
+      "PAN",
+      "Aadhaar"
+    ],
+    "applyLink": "https://enps.nsdl.com/",
+    "rules": {
+      "minAge": 18,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "jan-dhan",
+    "slug": "pm-jan-dhan-yojana",
+    "name": "PM Jan Dhan Yojana",
+    "summary": "Financial inclusion through bank accounts.",
+    "category": "other",
+    "states": [
+      "all"
+    ],
+    "tags": [
+      "banking"
+    ],
+    "benefits": [
+      "Zero balance bank account"
+    ],
+    "documents": [
+      "KYC documents"
+    ],
+    "applyLink": "https://pmjdy.gov.in/",
+    "rules": {
+      "minAge": 10,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "skill-india",
+    "slug": "skill-india-pmkvy",
+    "name": "Skill India (PMKVY)",
+    "summary": "Skill development training scheme.",
+    "category": "jobs",
+    "states": [
+      "all"
+    ],
+    "tags": [
+      "training",
+      "employment"
+    ],
+    "benefits": [
+      "Free skill training"
+    ],
+    "documents": [
+      "ID proof"
+    ],
+    "applyLink": "https://www.pmkvyofficial.org/",
+    "rules": {
+      "minAge": 0,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "nsap",
+    "slug": "national-social-assistance",
+    "name": "National Social Assistance Programme",
+    "summary": "Social pension scheme.",
+    "category": "senior",
+    "states": [
+      "all"
+    ],
+    "tags": [
+      "pension"
+    ],
+    "benefits": [
+      "Financial assistance to elderly/widows"
+    ],
+    "documents": [
+      "Age proof",
+      "Income proof"
+    ],
+    "applyLink": "https://nsap.nic.in/",
+    "rules": {
+      "minAge": 0,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "kcc",
+    "slug": "kisan-credit-card",
+    "name": "Kisan Credit Card",
+    "summary": "Credit facility for farmers.",
+    "category": "farmer",
+    "states": [
+      "all"
+    ],
+    "tags": [
+      "credit",
+      "agriculture"
+    ],
+    "benefits": [
+      "Short-term agricultural credit"
+    ],
+    "documents": [
+      "Land proof",
+      "Aadhaar"
+    ],
+    "applyLink": "https://www.india.gov.in/spotlight/kisan-credit-card-scheme",
+    "rules": {
+      "minAge": 18,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
     "id": "e-shram",
     "slug": "e-shram",
-    "name": "e-SHRAM (National Database of Unorganised Workers)",
-    "summary": "Registration for unorganised workers; linked benefits vary.",
+    "name": "e-SHRAM Portal",
+    "summary": "Registration for unorganized workers.",
     "category": "jobs",
     "states": [
       "all"
@@ -336,12 +414,11 @@
       "registration"
     ],
     "benefits": [
-      "Worker registration; access to applicable welfare benefits"
+      "Worker ID card"
     ],
     "documents": [
       "Aadhaar",
-      "Mobile number",
-      "Bank details (as applicable)"
+      "Bank details"
     ],
     "applyLink": "https://eshram.gov.in/",
     "rules": {
@@ -353,8 +430,8 @@
   {
     "id": "mgnrega",
     "slug": "mgnrega",
-    "name": "MGNREGA (Rural Employment Guarantee)",
-    "summary": "Wage employment guarantee in rural areas (as per Act).",
+    "name": "MGNREGA",
+    "summary": "Rural employment guarantee scheme.",
     "category": "jobs",
     "states": [
       "all"
@@ -364,15 +441,1106 @@
       "rural"
     ],
     "benefits": [
-      "Up to 100 days wage employment (as per rules)"
+      "100 days wage employment"
     ],
     "documents": [
       "Job card",
-      "Aadhaar/ID"
+      "Aadhaar"
     ],
     "applyLink": "https://nrega.nic.in/",
     "rules": {
       "minAge": 18,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "poshan",
+    "slug": "poshan-abhiyaan",
+    "name": "POSHAN Abhiyaan",
+    "summary": "Nutrition mission for women and children.",
+    "category": "health",
+    "states": [
+      "all"
+    ],
+    "tags": [
+      "nutrition",
+      "child"
+    ],
+    "benefits": [
+      "Nutritional support services"
+    ],
+    "documents": [
+      "Local eligibility proof"
+    ],
+    "applyLink": "https://wcd.nic.in/",
+    "rules": {
+      "minAge": 0,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "digital-india",
+    "slug": "digital-india",
+    "name": "Digital India Programme",
+    "summary": "Digital infrastructure and services initiative.",
+    "category": "other",
+    "states": [
+      "all"
+    ],
+    "tags": [
+      "digital"
+    ],
+    "benefits": [
+      "Digital services access"
+    ],
+    "documents": [
+      "Varies"
+    ],
+    "applyLink": "https://digitalindia.gov.in/",
+    "rules": {
+      "minAge": 0,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "standup-india",
+    "slug": "stand-up-india",
+    "name": "Stand-Up India Scheme",
+    "summary": "Loans for SC/ST and women entrepreneurs.",
+    "category": "jobs",
+    "states": [
+      "all"
+    ],
+    "tags": [
+      "entrepreneurship",
+      "loan"
+    ],
+    "benefits": [
+      "Bank loans for startups"
+    ],
+    "documents": [
+      "KYC",
+      "Business proposal"
+    ],
+    "applyLink": "https://www.standupmitra.in/",
+    "rules": {
+      "minAge": 18,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "startup-india",
+    "slug": "startup-india",
+    "name": "Startup India",
+    "summary": "Support for startups and entrepreneurs.",
+    "category": "jobs",
+    "states": [
+      "all"
+    ],
+    "tags": [
+      "startup"
+    ],
+    "benefits": [
+      "Tax benefits and funding support"
+    ],
+    "documents": [
+      "Business registration"
+    ],
+    "applyLink": "https://www.startupindia.gov.in/",
+    "rules": {
+      "minAge": 18,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "pmfme",
+    "slug": "pmfme",
+    "name": "PM Formalisation of Micro Food Processing Enterprises",
+    "summary": "Support for micro food businesses.",
+    "category": "jobs",
+    "states": [
+      "all"
+    ],
+    "tags": [
+      "food",
+      "msme"
+    ],
+    "benefits": [
+      "Financial and technical support"
+    ],
+    "documents": [
+      "Business details"
+    ],
+    "applyLink": "https://pmfme.mofpi.gov.in/",
+    "rules": {
+      "minAge": 18,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "swachh-bharat",
+    "slug": "swachh-bharat-mission",
+    "name": "Swachh Bharat Mission",
+    "summary": "Sanitation and cleanliness mission.",
+    "category": "other",
+    "states": [
+      "all"
+    ],
+    "tags": [
+      "sanitation"
+    ],
+    "benefits": [
+      "Sanitation infrastructure support"
+    ],
+    "documents": [
+      "Local eligibility proof"
+    ],
+    "applyLink": "https://swachhbharatmission.gov.in/",
+    "rules": {
+      "minAge": 0,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "ujala",
+    "slug": "ujala-scheme",
+    "name": "UJALA Scheme",
+    "summary": "Affordable LED bulbs distribution.",
+    "category": "other",
+    "states": [
+      "all"
+    ],
+    "tags": [
+      "energy"
+    ],
+    "benefits": [
+      "Subsidized LED bulbs"
+    ],
+    "documents": [
+      "ID proof"
+    ],
+    "applyLink": "https://www.eeslindia.org/",
+    "rules": {
+      "minAge": 0,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "deendayal",
+    "slug": "deendayal-antyodaya-yojana",
+    "name": "Deendayal Antyodaya Yojana",
+    "summary": "Livelihood mission for urban and rural poor.",
+    "category": "jobs",
+    "states": [
+      "all"
+    ],
+    "tags": [
+      "livelihood"
+    ],
+    "benefits": [
+      "Skill and financial assistance"
+    ],
+    "documents": [
+      "Eligibility proof"
+    ],
+    "applyLink": "https://day-nulm.gov.in/",
+    "rules": {
+      "minAge": 18,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "rashtriya-vayoshri",
+    "slug": "rashtriya-vayoshri-yojana",
+    "name": "Rashtriya Vayoshri Yojana",
+    "summary": "Assistive devices for senior citizens.",
+    "category": "senior",
+    "states": [
+      "all"
+    ],
+    "tags": [
+      "senior",
+      "assistive"
+    ],
+    "benefits": [
+      "Free assistive devices"
+    ],
+    "documents": [
+      "Age proof",
+      "Income certificate"
+    ],
+    "applyLink": "https://adis.gov.in/",
+    "rules": {
+      "minAge": 60,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "samagra-shiksha",
+    "slug": "samagra-shiksha",
+    "name": "Samagra Shiksha Abhiyan",
+    "summary": "Integrated education scheme.",
+    "category": "student",
+    "states": [
+      "all"
+    ],
+    "tags": [
+      "education"
+    ],
+    "benefits": [
+      "Support for school education"
+    ],
+    "documents": [
+      "School enrollment proof"
+    ],
+    "applyLink": "https://samagra.education.gov.in/",
+    "rules": {
+      "minAge": 0,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "pm-poshan",
+    "slug": "pm-poshan",
+    "name": "PM POSHAN (Mid-Day Meal Scheme)",
+    "summary": "Free meals for school children.",
+    "category": "student",
+    "states": [
+      "all"
+    ],
+    "tags": [
+      "nutrition",
+      "education"
+    ],
+    "benefits": [
+      "Mid-day meals in schools"
+    ],
+    "documents": [
+      "School enrollment"
+    ],
+    "applyLink": "https://pmposhan.education.gov.in/",
+    "rules": {
+      "minAge": 0,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "pmmvy",
+    "slug": "pradhan-mantri-matru-vandana-yojana",
+    "name": "Pradhan Mantri Matru Vandana Yojana",
+    "summary": "Maternity benefit scheme.",
+    "category": "women",
+    "states": [
+      "all"
+    ],
+    "tags": [
+      "maternity"
+    ],
+    "benefits": [
+      "Cash incentive for pregnant women"
+    ],
+    "documents": [
+      "Aadhaar",
+      "Pregnancy proof"
+    ],
+    "applyLink": "https://wcd.nic.in/schemes/pradhan-mantri-matru-vandana-yojana",
+    "rules": {
+      "minAge": 19,
+      "incomeMax": null,
+      "gender": "female"
+    }
+  },
+  {
+    "id": "andhra-pradesh-ysr-rythu-bharosa-ap",
+    "slug": "ysr-rythu-bharosa-ap",
+    "name": "YSR Rythu Bharosa (AP)",
+    "summary": "State scheme for Andhra Pradesh (details and eligibility as per official guidelines).",
+    "category": "farmer",
+    "states": [
+      "andhra-pradesh"
+    ],
+    "tags": [
+      "farmer",
+      "cash-benefit",
+      "state-scheme"
+    ],
+    "benefits": [
+      "Benefits vary as per scheme rules (check official portal)."
+    ],
+    "documents": [
+      "ID proof (Aadhaar/State ID as applicable)",
+      "Eligibility documents (as per portal)"
+    ],
+    "applyLink": "https://ysrrythubharosa.ap.gov.in/",
+    "rules": {
+      "minAge": 0,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "arunachal-pradesh-dulari-kanya-scheme-arunachal-pradesh",
+    "slug": "dulari-kanya-scheme-arunachal-pradesh",
+    "name": "Dulari Kanya Scheme (Arunachal Pradesh)",
+    "summary": "State scheme for Arunachal Pradesh (details and eligibility as per official guidelines).",
+    "category": "women",
+    "states": [
+      "arunachal-pradesh"
+    ],
+    "tags": [
+      "girl-child",
+      "support",
+      "state-scheme"
+    ],
+    "benefits": [
+      "Benefits vary as per scheme rules (check official portal)."
+    ],
+    "documents": [
+      "ID proof (Aadhaar/State ID as applicable)",
+      "Eligibility documents (as per portal)"
+    ],
+    "applyLink": "https://arunachalpradesh.gov.in/",
+    "rules": {
+      "minAge": 0,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "assam-orunodoi-scheme-assam",
+    "slug": "orunodoi-scheme-assam",
+    "name": "Orunodoi Scheme (Assam)",
+    "summary": "State scheme for Assam (details and eligibility as per official guidelines).",
+    "category": "women",
+    "states": [
+      "assam"
+    ],
+    "tags": [
+      "cash-benefit",
+      "household",
+      "state-scheme"
+    ],
+    "benefits": [
+      "Benefits vary as per scheme rules (check official portal)."
+    ],
+    "documents": [
+      "ID proof (Aadhaar/State ID as applicable)",
+      "Eligibility documents (as per portal)"
+    ],
+    "applyLink": "https://assam.gov.in/",
+    "rules": {
+      "minAge": 0,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "bihar-mukhyamantri-kanya-utthan-yojana-bihar",
+    "slug": "mukhyamantri-kanya-utthan-yojana-bihar",
+    "name": "Mukhyamantri Kanya Utthan Yojana (Bihar)",
+    "summary": "State scheme for Bihar (details and eligibility as per official guidelines).",
+    "category": "student",
+    "states": [
+      "bihar"
+    ],
+    "tags": [
+      "girl-child",
+      "education",
+      "state-scheme"
+    ],
+    "benefits": [
+      "Benefits vary as per scheme rules (check official portal)."
+    ],
+    "documents": [
+      "ID proof (Aadhaar/State ID as applicable)",
+      "Eligibility documents (as per portal)"
+    ],
+    "applyLink": "https://medhasoft.bih.nic.in/",
+    "rules": {
+      "minAge": 0,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "chhattisgarh-rajiv-gandhi-kisan-nyay-yojana-chhattisgarh",
+    "slug": "rajiv-gandhi-kisan-nyay-yojana-chhattisgarh",
+    "name": "Rajiv Gandhi Kisan Nyay Yojana (Chhattisgarh)",
+    "summary": "State scheme for Chhattisgarh (details and eligibility as per official guidelines).",
+    "category": "farmer",
+    "states": [
+      "chhattisgarh"
+    ],
+    "tags": [
+      "farmer",
+      "support",
+      "state-scheme"
+    ],
+    "benefits": [
+      "Benefits vary as per scheme rules (check official portal)."
+    ],
+    "documents": [
+      "ID proof (Aadhaar/State ID as applicable)",
+      "Eligibility documents (as per portal)"
+    ],
+    "applyLink": "https://cgstate.gov.in/",
+    "rules": {
+      "minAge": 0,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "goa-griha-aadhar-scheme-goa",
+    "slug": "griha-aadhar-scheme-goa",
+    "name": "Griha Aadhar Scheme (Goa)",
+    "summary": "State scheme for Goa (details and eligibility as per official guidelines).",
+    "category": "women",
+    "states": [
+      "goa"
+    ],
+    "tags": [
+      "cash-benefit",
+      "women",
+      "state-scheme"
+    ],
+    "benefits": [
+      "Benefits vary as per scheme rules (check official portal)."
+    ],
+    "documents": [
+      "ID proof (Aadhaar/State ID as applicable)",
+      "Eligibility documents (as per portal)"
+    ],
+    "applyLink": "https://goaonline.gov.in/",
+    "rules": {
+      "minAge": 0,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "gujarat-mukhyamantri-amrutum-ma-yojana-gujarat",
+    "slug": "mukhyamantri-amrutum-ma-yojana-gujarat",
+    "name": "Mukhyamantri Amrutum (MA) Yojana (Gujarat)",
+    "summary": "State scheme for Gujarat (details and eligibility as per official guidelines).",
+    "category": "health",
+    "states": [
+      "gujarat"
+    ],
+    "tags": [
+      "health",
+      "insurance",
+      "state-scheme"
+    ],
+    "benefits": [
+      "Benefits vary as per scheme rules (check official portal)."
+    ],
+    "documents": [
+      "ID proof (Aadhaar/State ID as applicable)",
+      "Eligibility documents (as per portal)"
+    ],
+    "applyLink": "https://www.magujarat.com/",
+    "rules": {
+      "minAge": 0,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "haryana-parivar-pehchan-patra-ppp-family-id-haryana",
+    "slug": "parivar-pehchan-patra-ppp-family-id-haryana",
+    "name": "Parivar Pehchan Patra (PPP) / Family ID (Haryana)",
+    "summary": "State scheme for Haryana (details and eligibility as per official guidelines).",
+    "category": "other",
+    "states": [
+      "haryana"
+    ],
+    "tags": [
+      "services",
+      "identity",
+      "state-scheme"
+    ],
+    "benefits": [
+      "Benefits vary as per scheme rules (check official portal)."
+    ],
+    "documents": [
+      "ID proof (Aadhaar/State ID as applicable)",
+      "Eligibility documents (as per portal)"
+    ],
+    "applyLink": "https://meraparivar.haryana.gov.in/",
+    "rules": {
+      "minAge": 0,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "himachal-pradesh-himcare-himachal-pradesh-health-scheme",
+    "slug": "himcare-himachal-pradesh-health-scheme",
+    "name": "HIMCARE (Himachal Pradesh Health Scheme)",
+    "summary": "State scheme for Himachal Pradesh (details and eligibility as per official guidelines).",
+    "category": "health",
+    "states": [
+      "himachal-pradesh"
+    ],
+    "tags": [
+      "health",
+      "insurance",
+      "state-scheme"
+    ],
+    "benefits": [
+      "Benefits vary as per scheme rules (check official portal)."
+    ],
+    "documents": [
+      "ID proof (Aadhaar/State ID as applicable)",
+      "Eligibility documents (as per portal)"
+    ],
+    "applyLink": "https://himcare.hp.gov.in/",
+    "rules": {
+      "minAge": 0,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "jharkhand-mukhyamantri-maiya-samman-yojana-jharkhand",
+    "slug": "mukhyamantri-maiya-samman-yojana-jharkhand",
+    "name": "Mukhyamantri Maiya Samman Yojana (Jharkhand)",
+    "summary": "State scheme for Jharkhand (details and eligibility as per official guidelines).",
+    "category": "women",
+    "states": [
+      "jharkhand"
+    ],
+    "tags": [
+      "cash-benefit",
+      "women",
+      "state-scheme"
+    ],
+    "benefits": [
+      "Benefits vary as per scheme rules (check official portal)."
+    ],
+    "documents": [
+      "ID proof (Aadhaar/State ID as applicable)",
+      "Eligibility documents (as per portal)"
+    ],
+    "applyLink": "https://jharsewa.jharkhand.gov.in/",
+    "rules": {
+      "minAge": 0,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "karnataka-gruha-lakshmi-scheme-karnataka",
+    "slug": "gruha-lakshmi-scheme-karnataka",
+    "name": "Gruha Lakshmi Scheme (Karnataka)",
+    "summary": "State scheme for Karnataka (details and eligibility as per official guidelines).",
+    "category": "women",
+    "states": [
+      "karnataka"
+    ],
+    "tags": [
+      "cash-benefit",
+      "women",
+      "state-scheme"
+    ],
+    "benefits": [
+      "Benefits vary as per scheme rules (check official portal)."
+    ],
+    "documents": [
+      "ID proof (Aadhaar/State ID as applicable)",
+      "Eligibility documents (as per portal)"
+    ],
+    "applyLink": "https://sevasindhu.karnataka.gov.in/Sevasindhu/English",
+    "rules": {
+      "minAge": 0,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "kerala-karunya-arogya-suraksha-padhathi-kasp-kerala",
+    "slug": "karunya-arogya-suraksha-padhathi-kasp-kerala",
+    "name": "Karunya Arogya Suraksha Padhathi (KASP) (Kerala)",
+    "summary": "State scheme for Kerala (details and eligibility as per official guidelines).",
+    "category": "health",
+    "states": [
+      "kerala"
+    ],
+    "tags": [
+      "health",
+      "insurance",
+      "state-scheme"
+    ],
+    "benefits": [
+      "Benefits vary as per scheme rules (check official portal)."
+    ],
+    "documents": [
+      "ID proof (Aadhaar/State ID as applicable)",
+      "Eligibility documents (as per portal)"
+    ],
+    "applyLink": "https://karunya.kerala.gov.in/",
+    "rules": {
+      "minAge": 0,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "madhya-pradesh-mukhyamantri-ladli-behna-yojana-madhya-pradesh",
+    "slug": "mukhyamantri-ladli-behna-yojana-madhya-pradesh",
+    "name": "Mukhyamantri Ladli Behna Yojana (Madhya Pradesh)",
+    "summary": "State scheme for Madhya Pradesh (details and eligibility as per official guidelines).",
+    "category": "women",
+    "states": [
+      "madhya-pradesh"
+    ],
+    "tags": [
+      "cash-benefit",
+      "women",
+      "state-scheme"
+    ],
+    "benefits": [
+      "Benefits vary as per scheme rules (check official portal)."
+    ],
+    "documents": [
+      "ID proof (Aadhaar/State ID as applicable)",
+      "Eligibility documents (as per portal)"
+    ],
+    "applyLink": "https://cmladlibahna.mp.gov.in/",
+    "rules": {
+      "minAge": 0,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "maharashtra-mahatma-jyotirao-phule-jan-arogya-yojana-mjpjay-maharashtra",
+    "slug": "mahatma-jyotirao-phule-jan-arogya-yojana-mjpjay-maharashtra",
+    "name": "Mahatma Jyotirao Phule Jan Arogya Yojana (MJPJAY) (Maharashtra)",
+    "summary": "State scheme for Maharashtra (details and eligibility as per official guidelines).",
+    "category": "health",
+    "states": [
+      "maharashtra"
+    ],
+    "tags": [
+      "health",
+      "insurance",
+      "state-scheme"
+    ],
+    "benefits": [
+      "Benefits vary as per scheme rules (check official portal)."
+    ],
+    "documents": [
+      "ID proof (Aadhaar/State ID as applicable)",
+      "Eligibility documents (as per portal)"
+    ],
+    "applyLink": "https://www.jeevandayee.gov.in/",
+    "rules": {
+      "minAge": 0,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "manipur-chief-minister-gi-hakshelgi-tengbang-cmht-manipur-health-scheme",
+    "slug": "chief-minister-gi-hakshelgi-tengbang-cmht-manipur-health-scheme",
+    "name": "Chief Minister-gi Hakshelgi Tengbang (CMHT) (Manipur Health Scheme)",
+    "summary": "State scheme for Manipur (details and eligibility as per official guidelines).",
+    "category": "health",
+    "states": [
+      "manipur"
+    ],
+    "tags": [
+      "health",
+      "insurance",
+      "state-scheme"
+    ],
+    "benefits": [
+      "Benefits vary as per scheme rules (check official portal)."
+    ],
+    "documents": [
+      "ID proof (Aadhaar/State ID as applicable)",
+      "Eligibility documents (as per portal)"
+    ],
+    "applyLink": "https://manipur.gov.in/",
+    "rules": {
+      "minAge": 0,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "meghalaya-meghalaya-health-insurance-scheme-mhis-megha-health-insurance",
+    "slug": "meghalaya-health-insurance-scheme-mhis-megha-health-insurance",
+    "name": "Meghalaya Health Insurance Scheme (MHIS) / Megha Health Insurance",
+    "summary": "State scheme for Meghalaya (details and eligibility as per official guidelines).",
+    "category": "health",
+    "states": [
+      "meghalaya"
+    ],
+    "tags": [
+      "health",
+      "insurance",
+      "state-scheme"
+    ],
+    "benefits": [
+      "Benefits vary as per scheme rules (check official portal)."
+    ],
+    "documents": [
+      "ID proof (Aadhaar/State ID as applicable)",
+      "Eligibility documents (as per portal)"
+    ],
+    "applyLink": "https://meghalaya.gov.in/",
+    "rules": {
+      "minAge": 0,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "mizoram-mizoram-health-insurance-scheme-state-health-scheme",
+    "slug": "mizoram-health-insurance-scheme-state-health-scheme",
+    "name": "Mizoram Health Insurance Scheme (State Health Scheme)",
+    "summary": "State scheme for Mizoram (details and eligibility as per official guidelines).",
+    "category": "health",
+    "states": [
+      "mizoram"
+    ],
+    "tags": [
+      "health",
+      "state-scheme"
+    ],
+    "benefits": [
+      "Benefits vary as per scheme rules (check official portal)."
+    ],
+    "documents": [
+      "ID proof (Aadhaar/State ID as applicable)",
+      "Eligibility documents (as per portal)"
+    ],
+    "applyLink": "https://mizoram.gov.in/",
+    "rules": {
+      "minAge": 0,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "nagaland-chief-minister-health-insurance-scheme-cmhis-nagaland",
+    "slug": "chief-minister-health-insurance-scheme-cmhis-nagaland",
+    "name": "Chief Minister Health Insurance Scheme (CMHIS) (Nagaland)",
+    "summary": "State scheme for Nagaland (details and eligibility as per official guidelines).",
+    "category": "health",
+    "states": [
+      "nagaland"
+    ],
+    "tags": [
+      "health",
+      "insurance",
+      "state-scheme"
+    ],
+    "benefits": [
+      "Benefits vary as per scheme rules (check official portal)."
+    ],
+    "documents": [
+      "ID proof (Aadhaar/State ID as applicable)",
+      "Eligibility documents (as per portal)"
+    ],
+    "applyLink": "https://nagaland.gov.in/",
+    "rules": {
+      "minAge": 0,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "odisha-kalia-scheme-odisha",
+    "slug": "kalia-scheme-odisha",
+    "name": "KALIA Scheme (Odisha)",
+    "summary": "State scheme for Odisha (details and eligibility as per official guidelines).",
+    "category": "farmer",
+    "states": [
+      "odisha"
+    ],
+    "tags": [
+      "farmer",
+      "support",
+      "state-scheme"
+    ],
+    "benefits": [
+      "Benefits vary as per scheme rules (check official portal)."
+    ],
+    "documents": [
+      "ID proof (Aadhaar/State ID as applicable)",
+      "Eligibility documents (as per portal)"
+    ],
+    "applyLink": "https://kalia.co.in/",
+    "rules": {
+      "minAge": 0,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "punjab-sarbat-sehat-bima-yojana-punjab",
+    "slug": "sarbat-sehat-bima-yojana-punjab",
+    "name": "Sarbat Sehat Bima Yojana (Punjab)",
+    "summary": "State scheme for Punjab (details and eligibility as per official guidelines).",
+    "category": "health",
+    "states": [
+      "punjab"
+    ],
+    "tags": [
+      "health",
+      "insurance",
+      "state-scheme"
+    ],
+    "benefits": [
+      "Benefits vary as per scheme rules (check official portal)."
+    ],
+    "documents": [
+      "ID proof (Aadhaar/State ID as applicable)",
+      "Eligibility documents (as per portal)"
+    ],
+    "applyLink": "https://punjab.gov.in/",
+    "rules": {
+      "minAge": 0,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "rajasthan-rajasthan-social-security-pension-jan-aadhaar-linked-benefits-rajastha",
+    "slug": "rajasthan-social-security-pension-jan-aadhaar-linked-benefits-rajasthan",
+    "name": "Rajasthan Social Security Pension / Jan Aadhaar linked benefits (Rajasthan)",
+    "summary": "State scheme for Rajasthan (details and eligibility as per official guidelines).",
+    "category": "senior",
+    "states": [
+      "rajasthan"
+    ],
+    "tags": [
+      "pension",
+      "services",
+      "state-scheme"
+    ],
+    "benefits": [
+      "Benefits vary as per scheme rules (check official portal)."
+    ],
+    "documents": [
+      "ID proof (Aadhaar/State ID as applicable)",
+      "Eligibility documents (as per portal)"
+    ],
+    "applyLink": "https://ssp.rajasthan.gov.in/",
+    "rules": {
+      "minAge": 0,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "sikkim-sikkim-students-scholarship-education-support-sikkim",
+    "slug": "sikkim-students-scholarship-education-support-sikkim",
+    "name": "Sikkim Students Scholarship / Education Support (Sikkim)",
+    "summary": "State scheme for Sikkim (details and eligibility as per official guidelines).",
+    "category": "student",
+    "states": [
+      "sikkim"
+    ],
+    "tags": [
+      "scholarship",
+      "education",
+      "state-scheme"
+    ],
+    "benefits": [
+      "Benefits vary as per scheme rules (check official portal)."
+    ],
+    "documents": [
+      "ID proof (Aadhaar/State ID as applicable)",
+      "Eligibility documents (as per portal)"
+    ],
+    "applyLink": "https://sikkim.gov.in/",
+    "rules": {
+      "minAge": 0,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "tamil-nadu-tamil-nadu-chief-ministers-comprehensive-health-insurance-scheme-cmch",
+    "slug": "tamil-nadu-chief-ministers-comprehensive-health-insurance-scheme-cmchis",
+    "name": "Tamil Nadu Chief Minister’s Comprehensive Health Insurance Scheme (CMCHIS)",
+    "summary": "State scheme for Tamil Nadu (details and eligibility as per official guidelines).",
+    "category": "health",
+    "states": [
+      "tamil-nadu"
+    ],
+    "tags": [
+      "health",
+      "insurance",
+      "state-scheme"
+    ],
+    "benefits": [
+      "Benefits vary as per scheme rules (check official portal)."
+    ],
+    "documents": [
+      "ID proof (Aadhaar/State ID as applicable)",
+      "Eligibility documents (as per portal)"
+    ],
+    "applyLink": "https://www.cmchistn.com/",
+    "rules": {
+      "minAge": 0,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "telangana-aarogyasri-telangana-state-health-scheme",
+    "slug": "aarogyasri-telangana-state-health-scheme",
+    "name": "Aarogyasri / Telangana State Health Scheme",
+    "summary": "State scheme for Telangana (details and eligibility as per official guidelines).",
+    "category": "health",
+    "states": [
+      "telangana"
+    ],
+    "tags": [
+      "health",
+      "insurance",
+      "state-scheme"
+    ],
+    "benefits": [
+      "Benefits vary as per scheme rules (check official portal)."
+    ],
+    "documents": [
+      "ID proof (Aadhaar/State ID as applicable)",
+      "Eligibility documents (as per portal)"
+    ],
+    "applyLink": "https://www.aarogyasri.telangana.gov.in/",
+    "rules": {
+      "minAge": 0,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "tripura-tripura-social-pension-welfare-schemes-portal",
+    "slug": "tripura-social-pension-welfare-schemes-portal",
+    "name": "Tripura Social Pension / Welfare Schemes Portal",
+    "summary": "State scheme for Tripura (details and eligibility as per official guidelines).",
+    "category": "senior",
+    "states": [
+      "tripura"
+    ],
+    "tags": [
+      "pension",
+      "welfare",
+      "state-scheme"
+    ],
+    "benefits": [
+      "Benefits vary as per scheme rules (check official portal)."
+    ],
+    "documents": [
+      "ID proof (Aadhaar/State ID as applicable)",
+      "Eligibility documents (as per portal)"
+    ],
+    "applyLink": "https://tripura.gov.in/",
+    "rules": {
+      "minAge": 0,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "uttar-pradesh-up-scholarship-portal-uttar-pradesh",
+    "slug": "up-scholarship-portal-uttar-pradesh",
+    "name": "UP Scholarship Portal (Uttar Pradesh)",
+    "summary": "State scheme for Uttar Pradesh (details and eligibility as per official guidelines).",
+    "category": "student",
+    "states": [
+      "uttar-pradesh"
+    ],
+    "tags": [
+      "scholarship",
+      "education",
+      "state-scheme"
+    ],
+    "benefits": [
+      "Benefits vary as per scheme rules (check official portal)."
+    ],
+    "documents": [
+      "ID proof (Aadhaar/State ID as applicable)",
+      "Eligibility documents (as per portal)"
+    ],
+    "applyLink": "https://scholarship.up.gov.in/",
+    "rules": {
+      "minAge": 0,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "uttarakhand-apuni-sarkar-edistrict-services-uttarakhand",
+    "slug": "apuni-sarkar-edistrict-services-uttarakhand",
+    "name": "Apuni Sarkar / eDistrict Services (Uttarakhand)",
+    "summary": "State scheme for Uttarakhand (details and eligibility as per official guidelines).",
+    "category": "other",
+    "states": [
+      "uttarakhand"
+    ],
+    "tags": [
+      "services",
+      "edistrict",
+      "state-scheme"
+    ],
+    "benefits": [
+      "Benefits vary as per scheme rules (check official portal)."
+    ],
+    "documents": [
+      "ID proof (Aadhaar/State ID as applicable)",
+      "Eligibility documents (as per portal)"
+    ],
+    "applyLink": "https://eservices.uk.gov.in/",
+    "rules": {
+      "minAge": 0,
+      "incomeMax": null,
+      "gender": "any"
+    }
+  },
+  {
+    "id": "west-bengal-swasthya-sathi-west-bengal",
+    "slug": "swasthya-sathi-west-bengal",
+    "name": "Swasthya Sathi (West Bengal)",
+    "summary": "State scheme for West Bengal (details and eligibility as per official guidelines).",
+    "category": "health",
+    "states": [
+      "west-bengal"
+    ],
+    "tags": [
+      "health",
+      "insurance",
+      "state-scheme"
+    ],
+    "benefits": [
+      "Benefits vary as per scheme rules (check official portal)."
+    ],
+    "documents": [
+      "ID proof (Aadhaar/State ID as applicable)",
+      "Eligibility documents (as per portal)"
+    ],
+    "applyLink": "https://swasthyasathi.gov.in/",
+    "rules": {
+      "minAge": 0,
       "incomeMax": null,
       "gender": "any"
     }
