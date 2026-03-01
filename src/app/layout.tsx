@@ -42,6 +42,10 @@ export async function generateMetadata({ params }: { params: Promise<{ lang?: st
     title: meta.title,
     description: meta.description,
     keywords: meta.keywords,
+    icons: {
+      icon: '/favicon.svg',
+      apple: '/favicon.svg',
+    },
     openGraph: {
       title: meta.title,
       description: meta.description,
