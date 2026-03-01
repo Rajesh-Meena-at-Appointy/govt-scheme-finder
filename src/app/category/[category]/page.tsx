@@ -100,22 +100,22 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
       <div className="grid md:grid-cols-3 gap-4 mb-6">
         <div className="bg-white rounded-xl border border-slate-200 p-4">
           <div className="flex items-center gap-2 mb-2">
-            <Users className="h-5 w-5 text-blue-600" />
-            <h3 className="font-semibold">Eligibility</h3>
+            <Users className="h-5 w-5 text-blue-600" aria-hidden="true" />
+            <h2 className="font-semibold text-base">Eligibility</h2>
           </div>
           <p className="text-sm text-slate-600">{info.eligibility}</p>
         </div>
         <div className="bg-white rounded-xl border border-slate-200 p-4">
           <div className="flex items-center gap-2 mb-2">
-            <FileText className="h-5 w-5 text-green-600" />
-            <h3 className="font-semibold">Documents</h3>
+            <FileText className="h-5 w-5 text-green-600" aria-hidden="true" />
+            <h2 className="font-semibold text-base">Documents</h2>
           </div>
           <p className="text-sm text-slate-600">{info.documents}</p>
         </div>
         <div className="bg-white rounded-xl border border-slate-200 p-4">
           <div className="flex items-center gap-2 mb-2">
-            <CheckCircle className="h-5 w-5 text-purple-600" />
-            <h3 className="font-semibold">How to Apply</h3>
+            <CheckCircle className="h-5 w-5 text-purple-600" aria-hidden="true" />
+            <h2 className="font-semibold text-base">How to Apply</h2>
           </div>
           <p className="text-sm text-slate-600">Visit official portal, register with Aadhaar, fill form, upload documents, and submit.</p>
         </div>

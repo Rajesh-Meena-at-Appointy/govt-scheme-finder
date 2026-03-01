@@ -78,11 +78,12 @@ export default function EligibilityWizard() {
           {/* State & Category Row - Stack on mobile */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
             <div className="space-y-1.5 md:space-y-2">
-              <Label className="text-sm font-semibold text-slate-700 flex items-center gap-2">
+              <Label htmlFor="wizard-state" className="text-sm font-semibold text-slate-700 flex items-center gap-2">
                 <MapPin className="h-4 w-4 text-blue-500" />
                 {t.wizard.state}
               </Label>
               <Select
+                id="wizard-state"
                 value={state}
                 onChange={(e) => setState(e.target.value)}
                 className="w-full h-12 md:h-12 border-2 border-slate-200 focus:border-blue-500 rounded-xl text-base"
@@ -96,11 +97,12 @@ export default function EligibilityWizard() {
             </div>
 
             <div className="space-y-1.5 md:space-y-2">
-              <Label className="text-sm font-semibold text-slate-700 flex items-center gap-2">
+              <Label htmlFor="wizard-category" className="text-sm font-semibold text-slate-700 flex items-center gap-2">
                 <Briefcase className="h-4 w-4 text-blue-500" />
                 {t.wizard.category}
               </Label>
               <Select
+                id="wizard-category"
                 value={category}
                 onChange={(e) => setCategory(e.target.value)}
                 className="w-full h-12 md:h-12 border-2 border-slate-200 focus:border-blue-500 rounded-xl text-base"
@@ -117,11 +119,12 @@ export default function EligibilityWizard() {
           {/* Personal Details Row - Stack on mobile */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4">
             <div className="space-y-1.5 md:space-y-2">
-              <Label className="text-sm font-semibold text-slate-700 flex items-center gap-2">
+              <Label htmlFor="wizard-gender" className="text-sm font-semibold text-slate-700 flex items-center gap-2">
                 <User className="h-4 w-4 text-blue-500" />
                 {t.wizard.gender}
               </Label>
               <Select
+                id="wizard-gender"
                 value={gender}
                 onChange={(e) => setGender(e.target.value as any)}
                 className="w-full h-12 md:h-12 border-2 border-slate-200 focus:border-blue-500 rounded-xl text-base"
@@ -133,11 +136,12 @@ export default function EligibilityWizard() {
             </div>
 
             <div className="space-y-1.5 md:space-y-2">
-              <Label className="text-sm font-semibold text-slate-700 flex items-center gap-2">
+              <Label htmlFor="wizard-age" className="text-sm font-semibold text-slate-700 flex items-center gap-2">
                 <Calendar className="h-4 w-4 text-blue-500" />
                 {t.wizard.age}
               </Label>
               <Input
+                id="wizard-age"
                 type="number"
                 value={age}
                 onChange={(e) => setAge(Number(e.target.value))}
@@ -149,11 +153,12 @@ export default function EligibilityWizard() {
             </div>
 
             <div className="space-y-1.5 md:space-y-2">
-              <Label className="text-sm font-semibold text-slate-700 flex items-center gap-2">
+              <Label htmlFor="wizard-income" className="text-sm font-semibold text-slate-700 flex items-center gap-2">
                 <DollarSign className="h-4 w-4 text-blue-500" />
                 {t.wizard.income}
               </Label>
               <Input
+                id="wizard-income"
                 type="number"
                 value={income}
                 onChange={(e) => setIncome(Number(e.target.value))}
@@ -170,11 +175,12 @@ export default function EligibilityWizard() {
             disabled={!canSearch}
             onClick={handleSearch}
             className="w-full h-12 md:h-14 text-base md:text-lg font-bold bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 rounded-xl shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]"
+            aria-label={t.wizard.findSchemes}
           >
-            <Search className="h-5 w-5 md:h-5 md:w-5 mr-2" />
+            <Search className="h-5 w-5 md:h-5 md:w-5 mr-2" aria-hidden="true" />
             <span className="hidden sm:inline">{t.wizard.findSchemes}</span>
             <span className="sm:hidden">{t.wizard.findSchemes}</span>
-            <ArrowRight className="h-5 w-5 md:h-5 md:w-5 ml-2" />
+            <ArrowRight className="h-5 w-5 md:h-5 md:w-5 ml-2" aria-hidden="true" />
           </Button>
 
           {/* Disclaimer */}
